@@ -16,7 +16,7 @@
     "header  header header header"
     "sidebar  main  main aside"
     "footer footer footer aside";
-    background-image:url("./img/background-tecnologia.jpg");
+    background-image:url("../img/background-tecnologia.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

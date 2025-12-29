@@ -16,6 +16,7 @@
       padding: 15px;
       margin-bottom: 15px;
       border-radius: 8px;
+      font-size: 18px;
     }
 
     h1, h2 {
@@ -25,6 +26,10 @@
     footer {
       background-color: #020617;
       text-align: center;
-      padding: 15px;
-      font-size: 14px;
+      padding: 10px;
+      font-size: 28px;
+      position: fixed ;
+      bottom: 0;
+      width: 100%;
+      color:white
     }

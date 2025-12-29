@@ -1,0 +1,78 @@
+/* Reset simples */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Corpo da página centralizado */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e2e8f0; /* cor clara de fundo */
+}
+
+/* Estilo do formulário */
+form {
+  width: 500px; /* maior largura */
+  padding: 30px;
+  background-color: #1e3a8a; /* azul moderno */
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  color: white;
+  text-align: center; /* centraliza texto do h1 */
+}
+
+/* Título do formulário */
+form h1 {
+  margin-bottom: 25px;
+  font-size: 32px;
+  color: #fff;
+}
+
+/* Labels */
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Inputs e textarea */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Placeholder mais escuro */
+form input::placeholder,
+form textarea::placeholder {
+  color: #555;
+}
+
+/* Botão */
+form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #1e40af;
+}
