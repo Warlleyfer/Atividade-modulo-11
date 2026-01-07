@@ -3,9 +3,14 @@
     padding: 0%;
     font-family: 'Courier New', Courier, monospace;
 }
-
-
-
+ 
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e2e8f0; 
+}
 
 .conteiner{
      min-height: 100vh;
@@ -36,7 +41,7 @@ background: rgba(0, 0, 0, 0.3);
     position:relative;
     z-index: 1;
 }
-header{
+.header{
     grid-area:header;
    text-shadow: rgb(255, 255, 255) 5px 5px 3px;
     display: flex;
@@ -50,17 +55,17 @@ header{
 }
 
 
-main{
+.main{
     grid-area: main;
     color: #fff;
 }
-main >h1{
+.main__tutulo{
     font-size: 24px;
     text-align: center;
     padding: 4px;
     text-shadow: blue 2px 4px 0px;
 }
-p{
+.main__paragrafo{
     font-size: 2cap;
     word-spacing: 3px;
     line-height: 1.6;
@@ -74,7 +79,7 @@ p{
  
    
 }
-.menu{
+.sidebar__menu{
  display: flex;
     align-items: center;
    justify-content: center;
@@ -83,7 +88,7 @@ p{
    
 }
 
-.button {
+.sidebar__button{
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -91,7 +96,7 @@ p{
   padding: 15px;
 }
 
-.button a {
+.sidebar__link{
   box-sizing: border-box;
   text-decoration: none;
   text-align: center;
@@ -110,19 +115,19 @@ p{
 }
 
 
-.button a:hover {
+.sidebar__link:hover {
   background: linear-gradient(135deg, #2563eb, #60a5fa);
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 
-aside{
+.aside{
     grid-area: aside;
      border:1px solid;
     
 }
-ul{
+.aside__list{
     background-color:rgba(0, 0, 255, 0.5);
     max-width: 100%;
     min-height: 100%;
@@ -132,20 +137,20 @@ ul{
     flex-direction: column;
    list-style: none;
 }
-li{
+.aside__item{
     padding:5px;
     border: solid 1px;
     border-radius: 5px;
     background-color: #fff;
     width: 100%;
 }
- #depoimento{
+ .aside__title{
     color:  #000000;
     background: radial-gradient( blue ,#fff);
     font-size: 3cap;
  }
 
-footer{
+.footer{
     grid-area: footer;
     display: flex;
     justify-content: center;
@@ -172,47 +177,139 @@ footer{
     font-size: medium;
   }
 
-  header {
+  .header{
     font-size: 1rem;
   }
 
-  main h1 {
+  .main .main__tutulo{
     font-size: 20px;
   }
 
-  p {
+  .main__paragrafo{
     font-size: 14px;
     padding: 10px;
   }
 
-  .menu {
+  .sidebar__menu{
     height: auto;
     padding: 10px;
   }
 
-  a{
+  .sidebar__link{
     width: 100%;
   }
 
-  button {
+  .sidebar__button{
     width: 90%;
     height: auto;
     font-size: 16px;
     margin-bottom: 10px;
   }
 
-  aside ul {
+  .aside__list{
     align-items: center;
   }
 
-  li {
+  .aside__item{
     width: 90%;
     margin-bottom: 5px;
   }
 
-  footer {
+  .footer {
     font-size: 16px;
     text-align: center;
     padding: 10px;
   }
 }
+/*Estilos da pagina de formulario*/
+.form{
+  width: 500px; 
+  padding: 35px;
+  background-color: #1e3a8a; 
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  color: white;
+  text-align: center; 
+}
+.form__title{
+  margin-bottom: 25px;
+  font-size: 32px;
+  color: #fff;
+}
+.form__label{
+   display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  text-align: left;
+}
+.from__textArea,.form__input{
+   width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.form__input::placeholder,
+.from__textArea::placeholder {
+  color: #000000;
+}
+.form__button{
+  width: 100%;
+  padding: 15px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.form__button:hover{
+ background-color: red;
+}
+
+
+/* PAGINA DE SERVIÇOS*/
+body{
+  margin: 0%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__cabeçalho{
+  text-align: center;
+  background-color: blue;
+  padding: 20px;
+}
+.main__serviços{
+  flex: 1;
+  max-width: 900px;
+  padding:20px;
+  margin: auto;
+  
+}
+.main__item{
+  background-color: #1a253e;
+  border-radius: 10px;
+ padding: 16px;
+ margin-bottom: 18px;
+ font-size: 18px;
+}
+.titulos{
+ color: #60a5fa;
+ 
+}
+  .footer__servicos{
+      background-color: #020617;
+      text-align: center;
+      padding: 10px;
+      font-size: 28px;
+      position: fixed ;
+      bottom: 0;
+      width: 100%;
+      color:white
+    }
